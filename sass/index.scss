@@ -9,7 +9,6 @@ body {
                 justify-content: center;
                 height: 50px;
                 background-color: $darkGrey;
-                line-height: 19px;
             
                 .localisation {
                     width: 12px;
@@ -43,15 +42,12 @@ body {
 
             
                 h2 {
-                    display: flex;
                     align-items: center;
                     margin: 0;
                     padding-right:58px;
                     padding-left:42px;
                     font-size: 24px;
                     font-weight: 700;
-  
-
                     
                 }
                 p{
@@ -72,6 +68,7 @@ body {
                     background: $buttonone;
                     margin: 27px 75px 0px 82px;
                     box-shadow: $boxshadowone;
+                    border: none;
 
 
                 }
@@ -79,17 +76,25 @@ body {
                     color:$white;
                     font-size: 16px;
                     font-weight: 500;
-                
-
                 }
                 }
 
             .second-section {
+                
                 h2{
-                    margin:48px 80px 10px 20px;
+                    margin:48px 80px 30px 20px;
                     font-size: 24px;
                     font-weight: 700;
                 }
+
+                ul {
+                    list-style: none;
+                }
+                li {
+                    margin-bottom: 25px;
+                }
+
+                
                 .button-fonction {
                     border-radius: 20px;
                     background-color: $sectioncolor;
@@ -97,17 +102,75 @@ body {
                     height: 72.379px;
                     flex-shrink: 0;
                     box-shadow: $boxshadowtwo;
-
-                }
-                ::marker {
+                    display: flex;
+                    align-items: center;
                    
                 }
 
-                i{
-                 
+                .button-link {
+                    display: flex;
+                    align-items: center;
+
                 }
-                span {}
+
+               
+                .custom-list-number {
+                    width: 15.273px;
+                    height: 14.545px;
+                    flex-shrink: 0;
+                    color: $white;
+                    font-family: Roboto;
+                    font-size: 14.182px;
+                    font-weight: 500;
+                    line-height: normal;
+                    background-color:$colorbutton;
+                }
+
+                .custom-list-number {
+                    border-radius: 50%; 
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    font-weight: bold;
+                    margin-right: 10px;
+                    position: relative;
+                    left: -15px;
+                }
+               
+                .text-fonction {
+                    margin-left: 20px;
+                }
             }
+            }
+            .third-section {
+                background-color: $sectioncolor;
+
+                h2 {
+                    margin:48px 80px 30px 20px;
+                    font-size: 24px;
+                    font-weight: 700;
+                    padding-top: 48px;
+
+                }
+
+                .card {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    flex-wrap: wrap;
+                
+                }
+            
+                .card-img {
+                    width: 346px;
+                    height: 231px;
+                    object-fit: cover;
+                    
+                }
+
+        
             }
         }
 

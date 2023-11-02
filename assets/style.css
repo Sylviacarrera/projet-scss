@@ -30,7 +30,6 @@ body header nav form {
   justify-content: center;
   height: 50px;
   background-color: #EAEAEA;
-  line-height: 19px;
 }
 body header nav form .localisation {
   width: 12px;
@@ -55,7 +54,6 @@ body main .first-section {
   text-align: center;
 }
 body main .first-section h2 {
-  display: flex;
   align-items: center;
   margin: 0;
   padding-right: 58px;
@@ -80,6 +78,7 @@ body main .first-section button {
   background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
   margin: 27px 75px 0px 82px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border: none;
 }
 body main .first-section span {
   color: White;
@@ -87,9 +86,15 @@ body main .first-section span {
   font-weight: 500;
 }
 body main .second-section h2 {
-  margin: 48px 80px 10px 20px;
+  margin: 48px 80px 30px 20px;
   font-size: 24px;
   font-weight: 700;
+}
+body main .second-section ul {
+  list-style: none;
+}
+body main .second-section li {
+  margin-bottom: 25px;
 }
 body main .second-section .button-fonction {
   border-radius: 20px;
@@ -98,6 +103,58 @@ body main .second-section .button-fonction {
   height: 72.379px;
   flex-shrink: 0;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+}
+body main .second-section .button-link {
+  display: flex;
+  align-items: center;
+}
+body main .second-section .custom-list-number {
+  width: 15.273px;
+  height: 14.545px;
+  flex-shrink: 0;
+  color: White;
+  font-family: Roboto;
+  font-size: 14.182px;
+  font-weight: 500;
+  line-height: normal;
+  background-color: var(--Primary, #9356DC);
+}
+body main .second-section .custom-list-number {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  margin-right: 10px;
+  position: relative;
+  left: -15px;
+}
+body main .second-section .text-fonction {
+  margin-left: 20px;
+}
+body .third-section {
+  background-color: #F6F6F6;
+}
+body .third-section h2 {
+  margin: 48px 80px 30px 20px;
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 48px;
+}
+body .third-section .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+body .third-section .card-img {
+  width: 346px;
+  height: 231px;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
