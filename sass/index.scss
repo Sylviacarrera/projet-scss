@@ -1,0 +1,115 @@
+body {
+    max-height: 400px;
+
+    header {
+        nav {
+            form {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 50px;
+                background-color: $darkGrey;
+                line-height: 19px;
+            
+                .localisation {
+                    width: 12px;
+                    height: 16px;
+                    display: flex;
+                    align-items: center;
+                }
+
+                input {
+                    border: none;
+                    background-color: transparent;
+                    text-align: center;
+
+                }
+                
+                input::placeholder {
+                    color:$darkestGrey;
+                    font-size: 16px;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+
+    main {
+            .first-section {
+                background-color: $sectioncolor;
+                padding-top: 39px;
+                padding-bottom: 40px;
+                text-align: center;
+
+            
+                h2 {
+                    display: flex;
+                    align-items: center;
+                    margin: 0;
+                    padding-right:58px;
+                    padding-left:42px;
+                    font-size: 24px;
+                    font-weight: 700;
+  
+
+                    
+                }
+                p{
+                    padding-top:10px ;
+                    padding-right:26px;
+                    padding-left: 34px;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 300;
+                    margin: 0;
+       
+                }
+                button {
+                    width: 218px;
+                    height: 50px;
+                    flex-shrink: 0;
+                    border-radius: 25px;
+                    background: $buttonone;
+                    margin: 27px 75px 0px 82px;
+                    box-shadow: $boxshadowone;
+
+
+                }
+                span {
+                    color:$white;
+                    font-size: 16px;
+                    font-weight: 500;
+                
+
+                }
+                }
+
+            .second-section {
+                h2{
+                    margin:48px 80px 10px 20px;
+                    font-size: 24px;
+                    font-weight: 700;
+                }
+                .button-fonction {
+                    border-radius: 20px;
+                    background-color: $sectioncolor;
+                    width: 322.486px;
+                    height: 72.379px;
+                    flex-shrink: 0;
+                    box-shadow: $boxshadowtwo;
+
+                }
+                ::marker {
+                   
+                }
+
+                i{
+                 
+                }
+                span {}
+            }
+            }
+        }
+
+
+@media screen and (min-width: 769px) {}

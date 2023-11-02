@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header h1 {
+  margin: 0;
+  font-family: "Shrikhand";
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 43.74px;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  padding-top: 14px;
+  padding-bottom: 5px;
+  z-index: 1;
+}
+
+body {
+  max-height: 400px;
+}
+body header nav form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: #EAEAEA;
+  line-height: 19px;
+}
+body header nav form .localisation {
+  width: 12px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+}
+body header nav form input {
+  border: none;
+  background-color: transparent;
+  text-align: center;
+}
+body header nav form input::placeholder {
+  color: #353535;
+  font-size: 16px;
+  font-weight: 500;
+}
+body main .first-section {
+  background-color: #F6F6F6;
+  padding-top: 39px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+body main .first-section h2 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-right: 58px;
+  padding-left: 42px;
+  font-size: 24px;
+  font-weight: 700;
+}
+body main .first-section p {
+  padding-top: 10px;
+  padding-right: 26px;
+  padding-left: 34px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  margin: 0;
+}
+body main .first-section button {
+  width: 218px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 25px;
+  background: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+  margin: 27px 75px 0px 82px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+}
+body main .first-section span {
+  color: White;
+  font-size: 16px;
+  font-weight: 500;
+}
+body main .second-section h2 {
+  margin: 48px 80px 10px 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+body main .second-section .button-fonction {
+  border-radius: 20px;
+  background-color: #F6F6F6;
+  width: 322.486px;
+  height: 72.379px;
+  flex-shrink: 0;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+/*# sourceMappingURL=style.css.map */
