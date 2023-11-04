@@ -9,6 +9,7 @@ a {
 }
 
 header h1 {
+  position: relative;
   margin: 0;
   font-family: "Shrikhand";
   font-weight: 400;
@@ -39,6 +40,7 @@ body header nav form .localisation {
 }
 body header nav form input {
   border: none;
+  outline: none;
   background-color: transparent;
   text-align: center;
 }
@@ -46,6 +48,7 @@ body header nav form input::placeholder {
   color: #353535;
   font-size: 16px;
   font-weight: 500;
+  opacity: 1;
 }
 body main .first-section {
   background-color: #F6F6F6;
@@ -151,7 +154,7 @@ body .third-section .card {
   overflow: hidden;
   flex-wrap: wrap;
 }
-body .third-section .card-img {
+body .third-section .card .card-img {
   width: 346px;
   height: 231px;
   object-fit: cover;
