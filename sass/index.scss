@@ -1,4 +1,6 @@
 body {
+    background-color: $sectioncolor;
+
     max-height: 400px;
 
     header {
@@ -35,8 +37,7 @@ body {
     }
 
     main {
-        .first-section {
-            background-color: $sectioncolor;
+        .section-presentation {
             padding-top: 39px;
             padding-bottom: 40px;
             text-align: center;
@@ -83,12 +84,28 @@ body {
             }
         }
 
-        .second-section {
+        .section-fonctionnement {
+
+            background-color: #FFFF;
+            padding-bottom: 32px;
+            padding-top: 10px;
+
+                @media screen and (min-width: 769px) {
+                padding-top: 30px;
+            }
+            
+
 
             h2 {
-                margin: 48px 80px 30px 20px;
+                margin: 25px 80px 22px 20px;
                 font-size: 24px;
                 font-weight: 700;
+
+                @media screen and (min-width: 769px) {
+                margin-left: 180px;
+                margin-right: 180px;
+                margin-bottom: 25px;
+                }
             }
 
             ul {
@@ -101,6 +118,7 @@ body {
 
 
             .button-fonction {
+                margin: auto;
                 border-radius: 20px;
                 background-color: $sectioncolor;
                 width: 322.486px;
@@ -118,65 +136,162 @@ body {
 
             }
 
+            .custom-list {
 
-            .custom-list-number {
-                width: 15.273px;
-                height: 14.545px;
-                flex-shrink: 0;
-                color: $white;
-                font-family: Roboto;
-                font-size: 14.182px;
-                font-weight: 500;
-                line-height: normal;
-                background-color: $colorbutton;
+                padding: 0;
+                flex-wrap: wrap;
+
+                @media screen and (min-width: 769px) {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-left: 180px;
+                    margin-right: 180px;
             }
 
-            .custom-list-number {
-                border-radius: 50%;
-                width: 30px;
-                height: 30px;
-                text-align: center;
-                line-height: 30px;
-                font-weight: bold;
-                margin-right: 10px;
-                position: relative;
-                left: -15px;
+
+                &-number {
+                    width: 15.273px;
+                    height: 14.545px;
+                    color: $white;
+                    font-family: Roboto;
+                    font-size: 14.182px;
+                    font-weight: 500;
+                    background-color: $colorbutton;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    text-align: center;
+                    line-height: 30px;
+                    font-weight: bold;
+                    margin-right: 10px;
+                    position: relative;
+                    left: -15px;
+                }
+
             }
 
             .text-fonction {
                 margin-left: 20px;
+                font-size: 16px;
+                font-weight: 500;
             }
         }
     }
 
-    .third-section {
+    .section-restaurants {
         background-color: $sectioncolor;
+        display: flex;
+        flex-direction: column;
 
         h2 {
-            margin: 48px 80px 30px 20px;
+            margin: 40px 80px 22px 20px;
             font-size: 24px;
             font-weight: 700;
-            padding-top: 48px;
 
+        }
+        a {
+            padding-bottom: 18px;
         }
 
         .card {
+            margin: auto;
+            background-color: #FFFF;
+            width: 340px;
+            position: relative;
+            border-radius: 15px;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            flex-direction: column;
             overflow: hidden;
             flex-wrap: wrap;
 
-            .card-img {
-                width: 346px;
+            &-img {
                 height: 231px;
                 object-fit: cover;
+            }
+
+            &-content {
+                position: relative;
+
+                .card-title,
+                p {
+
+                    margin: 0;
+                    margin-left: 13px;
+                    margin-bottom: 5px;
+                }
+
+                .card-title {
+                    margin-top: 18px;
+                }
+
+                p {
+                    margin-bottom: 18px;
+                }
+            }
+
+            .heart {
+                position: absolute;
+                right: 23px;
+                bottom: 33px;
+
+                &:hover {
+                    background: linear-gradient($colorbutton,$pink);
+                    color: transparent;
+                    font-weight: 600;
+                    -webkit-background-clip: text;
+                }
+
+            }
+
+            span {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                top: 12px;
+                right: 12px;
+                background-color: $newRestaurentBackground;
+                color: $newRestaurentColor;
+                position: absolute;
+                padding: 5px;
+                border-radius: 2px;
+                width: 80px;
+                font-size: 14px;
+                font-weight: 500;
+                box-shadow: $box-shadowthree;
+
             }
         }
 
 
     }
+
+    footer {
+        margin-top: 40px;
+
+        .footer-title {
+            font-family: Shrikhand;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        .footer-liens {
+            color: #FFFF;
+            background-color: $darkestGrey;
+            display: flex;
+            flex-direction: column;
+            padding: 22px 25px;
+
+            .link-container {
+                display: flex;
+                gap: 11px;
+            }
+
+            a {
+                color: #FFFF;
+                margin-bottom: 7px;
+            }
+        }
+    }
 }
 
-
-@media screen and (min-width: 769px) {}
