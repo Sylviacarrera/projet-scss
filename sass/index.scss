@@ -90,10 +90,10 @@ body {
             padding-bottom: 32px;
             padding-top: 10px;
 
-                @media screen and (min-width: 769px) {
+            @media screen and (min-width: 769px) {
                 padding-top: 30px;
             }
-            
+
 
 
             h2 {
@@ -102,9 +102,9 @@ body {
                 font-weight: 700;
 
                 @media screen and (min-width: 769px) {
-                margin-left: 180px;
-                margin-right: 180px;
-                margin-bottom: 25px;
+                    margin-left: 180px;
+                    margin-right: 180px;
+                    margin-bottom: 25px;
                 }
             }
 
@@ -146,7 +146,7 @@ body {
                     justify-content: space-between;
                     margin-left: 180px;
                     margin-right: 180px;
-            }
+                }
 
 
                 &-number {
@@ -179,91 +179,115 @@ body {
     }
 
     .section-restaurants {
-        background-color: $sectioncolor;
-        display: flex;
-        flex-direction: column;
-
         h2 {
             margin: 40px 80px 22px 20px;
             font-size: 24px;
             font-weight: 700;
+            @media screen and (min-width: 769px) {
+                margin-left: 180px;
+                margin-right: 180px;
+                margin-bottom: 25px;
+            }
 
         }
-        a {
-            padding-bottom: 18px;
-        }
-
-        .card {
-            margin: auto;
-            background-color: #FFFF;
-            width: 340px;
-            position: relative;
-            border-radius: 15px;
+        .restaurants-container {
+            background-color: $sectioncolor;
             display: flex;
             flex-direction: column;
-            overflow: hidden;
-            flex-wrap: wrap;
 
-            &-img {
-                height: 231px;
-                object-fit: cover;
-            }
-
-            &-content {
-                position: relative;
-
-                .card-title,
-                p {
-
-                    margin: 0;
-                    margin-left: 13px;
-                    margin-bottom: 5px;
-                }
-
-                .card-title {
-                    margin-top: 18px;
-                }
-
-                p {
-                    margin-bottom: 18px;
-                }
-            }
-
-            .heart {
-                position: absolute;
-                right: 23px;
-                bottom: 33px;
-
-                &:hover {
-                    background: linear-gradient($colorbutton,$pink);
-                    color: transparent;
-                    font-weight: 600;
-                    -webkit-background-clip: text;
-                }
-
-            }
-
-            span {
-                display: flex;
-                align-items: center;
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 30px;
                 justify-content: center;
-                top: 12px;
-                right: 12px;
-                background-color: $newRestaurentBackground;
-                color: $newRestaurentColor;
-                position: absolute;
-                padding: 5px;
-                border-radius: 2px;
-                width: 80px;
-                font-size: 14px;
-                font-weight: 500;
-                box-shadow: $box-shadowthree;
-
             }
+
+           
+
+            a {
+                padding-bottom: 18px;
+                @media screen and (min-width: 768px) {
+                    width: calc(40% - 30px)
+ 
+                 }
+            }
+
+            .card {
+                margin: auto;
+                background-color: #FFFF;
+                width: 340px;
+                position: relative;
+                border-radius: 15px;
+                display: flex;
+                flex-direction: column;
+                overflow: hidden;
+                flex-wrap: wrap;
+                @media screen and (min-width: 768px) {
+                    width: 100%
+ 
+                 }
+                &-img {
+                    height: 231px;
+                    object-fit: cover;
+                }
+
+                &-content {
+                    position: relative;
+
+                    .card-title,
+                    p {
+
+                        margin: 0;
+                        margin-left: 13px;
+                        margin-bottom: 5px;
+                    }
+
+                    .card-title {
+                        margin-top: 18px;
+                    }
+
+                    p {
+                        margin-bottom: 18px;
+                    }
+                }
+
+                .heart {
+                    position: absolute;
+                    right: 23px;
+                    bottom: 33px;
+
+                    &:hover {
+                        background: linear-gradient($colorbutton, $pink);
+                        color: transparent;
+                        font-weight: 600;
+                        -webkit-background-clip: text;
+                    }
+
+                }
+
+                span {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top: 12px;
+                    right: 12px;
+                    background-color: $newRestaurentBackground;
+                    color: $newRestaurentColor;
+                    position: absolute;
+                    padding: 5px;
+                    border-radius: 2px;
+                    width: 80px;
+                    font-size: 14px;
+                    font-weight: 500;
+                    box-shadow: $box-shadowthree;
+
+                }
+            }
+
+
         }
-
-
     }
+
 
     footer {
         margin-top: 40px;
@@ -294,4 +318,3 @@ body {
         }
     }
 }
-

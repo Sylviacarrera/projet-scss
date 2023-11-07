@@ -1,0 +1,47 @@
+body {
+    header {
+       
+        .arrow {
+            position:absolute;
+            margin-top: 25px;
+            margin-left: 17px;
+           
+        }
+        nav {
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 275px;
+            }
+
+            
+        }
+    }
+
+    #mainrestaurant {
+        padding-right: 15px;
+        padding-left: 15px;
+        background-color: $sectioncolor;
+        position: relative;
+        margin-top: -30px;
+        border-radius: 30px;
+
+        div {
+           
+            &.titleheart {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-right: 25px;
+
+            h2 {
+            font-family: Shrikhand;
+            font-size: 28px;
+            font-weight: 400;
+        }
+
+        }
+    }
+ 
+    }
+}
