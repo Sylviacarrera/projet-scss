@@ -148,6 +148,10 @@ body {
                     margin-right: 180px;
                 }
 
+                @media screen and (min-width: 769px) {
+                justify-content: space-evenly;
+                }
+
 
                 &-number {
                     width: 15.273px;
@@ -187,6 +191,8 @@ body {
                 margin-left: 180px;
                 margin-right: 180px;
                 margin-bottom: 25px;
+
+        
             }
 
         }
@@ -195,19 +201,27 @@ body {
             display: flex;
             flex-direction: column;
 
+            @media screen and (min-width:750px) and (max-width: 1003px) {
+            display: contents;
+            margin-right: 50px;
+            }
+
             @media screen and (min-width: 768px) {
                 flex-direction: row;
                 flex-wrap: wrap;
-                gap: 30px;
-                justify-content: center;
+                margin-left: 180px;
             }
 
            
 
             a {
                 padding-bottom: 18px;
+
                 @media screen and (min-width: 768px) {
-                    width: calc(40% - 30px)
+                    width: calc(41.5% - 30px);
+                    padding-bottom: 30px;
+                    padding-right: 100px;
+
  
                  }
             }
@@ -256,13 +270,6 @@ body {
                     right: 23px;
                     bottom: 33px;
 
-                    &:hover {
-                        background: linear-gradient($colorbutton, $pink);
-                        color: transparent;
-                        font-weight: 600;
-                        -webkit-background-clip: text;
-                    }
-
                 }
 
                 span {
@@ -297,6 +304,12 @@ body {
             font-size: 18px;
             font-weight: 400;
             line-height: normal;
+
+            @media screen and (min-width: 768px) {
+                order: 2;
+                margin-left: 65px;
+                margin-right: 40px;
+            }
         }
 
         .footer-liens {
@@ -306,6 +319,17 @@ body {
             flex-direction: column;
             padding: 22px 25px;
 
+
+            @media screen and (min-width: 768px) {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+                justify-content: end;
+                gap: 15px;
+
+             }
+            
+
             .link-container {
                 display: flex;
                 gap: 11px;
@@ -314,6 +338,7 @@ body {
             a {
                 color: #FFFF;
                 margin-bottom: 7px;
+
             }
         }
     }

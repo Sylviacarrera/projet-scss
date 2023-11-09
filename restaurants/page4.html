@@ -28,110 +28,131 @@
                 <i class="fa-solid fa-arrow-left arrow"></i>
 
                 <h1>ohmyfood</h1>
+            </a>
 
             <nav>
                 <img src="/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                    style="height: 251px;" alt=" image d'un plat dans un restaurant">
+                     alt=" image d'un plat dans un restaurant">
 
             </nav>
         </header>
 
-        <main>
-
+        <main id="mainrestaurant">
+            <div class="titleheart">
             <h2>Le délice des sens</h2>
+            <i class="fa-regular fa-heart heart"></i>
+        </div>
 
-            <section class="">
+            <section class="section-entrees">
 
-                <h3>ENTREES</h3>
+                <h3>ENTRÉES</h3>
 
-                <div class="button">
+                <div>
                     <a class="button-link" href="#">
                         <h4>Tartare de thon</h4>
-                        <p class="card-subtitle">Assaisonné au yuzu</p>
-                        <p>25<span class="euro">€</span></p>
+                        <div class="p-container">
+                        <p>Assaisonné au yuzu</p>
+                        <p class="price">25<span class="euro">€</span></p>
+                        </div>
                     </a>
                 </div>
 
-                <div class="button">
+                <div>
                     <a class="button-link" href="#">
                         <h4>Bouchée de homard croustillant</h4>
-                        <p class="card-subtitle">Et sa farandole de petits légumes</p>
-                        <p>35<span class="euro">€</span></p>
+                        <div class="p-container">
+                        <p>Et sa farandole de petits légumes</p>
+                        <p class="price">35<span class="euro">€</span></p>
+                        </div>
                     </a>
                 </div>
 
-                <div class="button">
+                <div>
                     <a class="button-link" href="#">
                         <h4>Poulet rôti aux herbes de Provence</h4>
-                        <p class="card-subtitle">Et sa crème de truffe</p>
-                        <p>40<span class="euro">€</span></p>
+                        <div class="p-container">
+                        <p>Et sa crème de truffe</p>
+                        <p class="price">40<span class="euro">€</span></p>
+                        </div>
                     </a>
                 </div>
 
             </section>
 
-            <section class="">
+            <section class="section-plats">
 
                 <h3>PLATS</h3>
 
-                <div class="button">
+                <div>
                     <a class="button-link" href="#">
                         <h4>Poulet rôti aux herbes de Provence</h4>
-                        <p class="card-subtitle">Et sa crème de truffe</p>
-                        <p>40<span class="euro">€</span></p>
+                        <div class="p-container">
+                        <p>Et sa crème de truffe</p>
+                        <p class="price">40<span class="euro">€</span></p>
+                        </div>
                     </a>
                 </div>
 
-                <div class="button">
+                <div>
                     <a class="button-link" href="#">
                         <h4>Langouste rôtie</h4>
-                        <p class="card-subtitle">Et ses légumes de saison</p>
-                        <p>35<span class="euro">€</span></p>
+                        <div class="p-container">
+                        <p>Et ses légumes de saison</p>
+                        <p class="price">35<span class="euro">€</span></p>
+                        </div>
                     </a>
                 </div>
 
-                <div class="button">
+                <div>
                     <a class="button-link" href="#">
                         <h4>Côte de boeuf Angus</h4>
-                        <p class="card-subtitle">Et sa purée de panais</p>
-                        <p>44<span class="euro">€</span></p>
+                        <div class="p-container">
+                        <p>Et sa purée de panais</p>
+                        <p class="price">44<span class="euro">€</span></p>
+                        </div>
                     </a>
                 </div>
 
             </section>
 
 
-            <section class="">
+            <section class="section-desserts">
 
                 <h3>DESSERTS</h3>
 
-                <div class="button">
+                <div>
                     <a class="button-link" href="#">
                         <h4>Farandole de desserts</h4>
-                        <p class="card-subtitle">Du chef</p>
-                        <p>18<span class="euro">€</span></p>
+                        <div class="p-container">
+                        <p>Du chef</p>
+                        <p class="price">18<span class="euro">€</span></p>
+                        </div>
                     </a>
                 </div>
 
-                <div class="button">
+                <div>
                     <a class="button-link" href="#">
                         <h4>Crème brulée</h4>
-                        <p class="card-subtitle">Revisitée</p>
-                        <p>22<span class="euro">€</span></p>
+                        <div class="p-container">
+                        <p>Revisitée</p>
+                        <p class="price">22<span class="euro">€</span></p>
+                        </div>
                     </a>
                 </div>
 
-                <div class="button">
+                <div>
                     <a class="button-link" href="#">
                         <h4>Tiramisu</h4>
-                        <p class="card-subtitle">A la noisette</p>
-                        <p>23<span class="euro">€</span></p>
+                        <div class="p-container">
+                        <p>A la noisette</p>
+                        <p class="price">23<span class="euro">€</span></p>
+                        </div>
                     </a>
                 </div>
 
             </section>
 
-            <div class="">
+            <div class="button-commander">
 
                 <button type="submit" class="button-link">
                     <span>Commander</span>
@@ -144,17 +165,23 @@
 
             <div class="footer-liens">
 
-                <img src="./images/logo/ohmyfood@2x.svg" alt="logo du site">
-
-                <i class="fa-solid fa-utensils" style="color: #ffffff;"></i>
-                <a href="#"> Proposer un restaurant</a>
-
-                <i class="fa-solid fa-handshake-angle" style="color: #ffffff;"></i>
-                <a href="#"> Devenir partenaire</a>
-
-                <a href="#"> Mentions légales</a>
+                <p class="footer-title">Ohmyfood</p>
+                <div class="link-container">
+                    <i class="fa-solid fa-utensils" style="color: #ffffff;"></i>
+                    <a href="#">
+                        Proposer un restaurant</a>
+                </div>
+    
+                <div class="link-container">
+                    <i class="fa-solid fa-handshake-angle" style="color: #ffffff;"></i>
+                    <a href="#">
+                        Devenir partenaire</a>
+    
+                </div>
+    
+                <a href="#">
+                    Mentions légales</a>
                 <a href="#">Contact</a>
-
             </div>
         </footer>
     </div>
