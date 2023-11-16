@@ -37,10 +37,10 @@ body {
         border-radius: 30px;
 
         @media screen and (min-width: 769px) {
-        margin-right: 200px;
-        margin-left: 200px;
-        padding-left: 200px;
-        padding-right: 200px;
+        margin-right: 10%;
+        margin-left: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
 }
         }
 
@@ -100,39 +100,49 @@ body {
                     }
                 }
 
-            .p-container {
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                .check-container{
-                    margin-right: -33px;
-                    transition: margin-right 1s ease;
+                .p-container {
+                    width: 100%;
                     display: flex;
-                    i{
-                        margin-left: 10px;
+                    justify-content: space-between;
+                
+                    .check-container {
+                        margin-right: -33px;
+                        transition: margin-right 1s ease;
+                        display: flex;
+                        align-items: stretch; /* Ajout de cette propriété pour que la .check-container prenne toute la hauteur */
+                
+                        i {
+                            margin-left: 10px;
+                            background-color: #99E2D0;
+                        }
+                    }
+                
+                    p {
+                        font-family: Roboto;
+                        font-size: 15.043px;
+                        font-style: normal;
+                        font-weight: 300;
+                    }
+                
+                    .price {
+                        font-size: 15.043px;
+                        font-weight: 700;
                     }
                 }
-
-                p {font-family: Roboto;
-                    font-size: 15.043px;
-                    font-style: normal;
-                    font-weight: 300;}
-
-               .price {
-                    font-size: 15.043px;
-                    font-weight: 700;
-                }
                 
-            }
-            .p-container:hover .check-container{
-                margin-right: 0px;
-            }
-            }
-
+                .p-container:hover .check-container {
+                    margin-right: 0px;
+                }
             
             }
+        }
       
             .button-commander {
+                @media screen and (min-width: 769px) {
+                    display: flex;
+                    justify-content: center;
+                       
+                }
             
                 button{
                 
@@ -146,6 +156,7 @@ body {
                 border: none;
                 color: $white;
 
+                
               
             }
         }
