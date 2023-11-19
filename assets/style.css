@@ -47,16 +47,15 @@ header h1 {
   margin: 27px 75px 0px 82px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: none;
-  /* Ajout de la transition ici */
+  font-size: 16px;
+  font-weight: 500;
+  font-family: Roboto;
 }
 .button-explorer button:hover {
-  /* Styles au survol du bouton */
   transform: scale(1.02);
   /* Zoom de 10% au survol */
   opacity: 0.8;
-  /* Opacité réduite au survol */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  /* Ajout de l'ombre portée */
   transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
@@ -154,26 +153,21 @@ body .loader {
 @keyframes chargeur {
   0% {
     transform: rotate(0deg) scale(1);
-    border-top-color: #99E2D0;
-    border-bottom-color: #353535;
+    border-color: #99E2D0 #353535;
   }
   25% {
-    border-top-color: var(--Primary, #9356DC);
-    border-bottom-color: #99E2D0;
+    border-color: var(--Primary, #9356DC) #99E2D0;
   }
   50% {
     transform: rotate(360deg) scale(1.15);
-    border-top-color: #353535;
-    border-bottom-color: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
+    border-color: #FF79DA;
   }
   75% {
-    border-top-color: linear-gradient(193deg, #9356DC -11.44%, #FF79DA 123.93%);
-    border-bottom-color: var(--Primary, #9356DC);
+    border-color: #FF79DA;
   }
   100% {
     transform: rotate(720deg) scale(1);
-    border-top-color: var(--Primary, #9356DC);
-    border-bottom-color: var(--Primary, #9356DC);
+    border-color: var(--Primary, #9356DC);
   }
 }
 @keyframes fadeOut {
@@ -439,11 +433,6 @@ main .section-fonctionnement div .text-fonction {
 body div.principal-container {
   background-color: White;
 }
-@media screen and (min-width: 769px) {
-  body div.principal-container {
-    background-color: White;
-  }
-}
 body div header .arrow {
   position: absolute;
   margin-top: 25px;
@@ -497,8 +486,6 @@ body div #mainrestaurant .titleheart h2 {
 body div #mainrestaurant .dishes {
   margin-bottom: 40px;
   animation: fadeIn 0.5s both;
-  /*** ***/
-  /**** ***/
 }
 body div #mainrestaurant .dishes:nth-child(2) {
   animation-delay: 500ms;

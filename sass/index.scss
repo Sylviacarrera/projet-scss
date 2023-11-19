@@ -31,33 +31,24 @@ body {
 
     @keyframes chargeur {
         0% {
-            transform: rotate(0deg) scale(1);
-            border-top-color: $newRestaurentBackground;
-            border-bottom-color:$darkestGrey;
+          transform: rotate(0deg) scale(1);
+          border-color: #99E2D0 #353535;
         }
-
         25% {
-            border-top-color: $colorbutton;
-            border-bottom-color:$newRestaurentBackground;
+          border-color: var(--Primary, #9356DC) #99E2D0;
         }
-
         50% {
-            transform: rotate(360deg) scale(1.15);
-            border-top-color:$darkestGrey;
-            border-bottom-color: $buttonone;
+          transform: rotate(360deg) scale(1.15);
+          border-color: $pink;
         }
-
         75% {
-            border-top-color: $buttonone;
-            border-bottom-color: $colorbutton;
+          border-color: $pink;
         }
-
         100% {
-            transform: rotate(720deg) scale(1);
-            border-top-color: $colorbutton;
-            border-bottom-color: $colorbutton;
+          transform: rotate(720deg) scale(1);
+          border-color: var(--Primary, #9356DC);
         }
-    }
+      }
 
     @keyframes fadeOut {
         to {

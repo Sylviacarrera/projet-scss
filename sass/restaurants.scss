@@ -4,10 +4,6 @@ body {
         &.principal-container {
             background-color: $white;
 
-            @media screen and (min-width: 769px) {
-                background-color: $white;
-            }
-
         }
         header {
 
@@ -109,7 +105,6 @@ body {
                     width: 40px;
                 }
 
-                /*** ***/
 
                 article {
                     display: flex;
@@ -190,7 +185,7 @@ body {
                     }
                 }
 
-                /**** ***/
+        
 
             }
 
