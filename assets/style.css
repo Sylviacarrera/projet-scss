@@ -25,11 +25,9 @@ header h1 {
   z-index: 1;
 }
 
-@media screen and (min-width: 768px) {
-  .button-explorer {
-    justify-content: center;
-    display: flex;
-  }
+.button-explorer {
+  justify-content: center;
+  display: flex;
 }
 .button-explorer button {
   /*animation*/
